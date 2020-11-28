@@ -6,6 +6,9 @@ body{background-color: #000000;
   text-align: center;
 }
 
+.container{
+  text-align: center;
+}
 
 h1{
   font-family: 'Oswald', sans-serif;

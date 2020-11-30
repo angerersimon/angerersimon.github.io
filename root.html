@@ -25,7 +25,7 @@
         <h3>Film und Design</h2>
         </div>
 
-        <div style="height: 95vh;
+        <div style="height: 90vh;
         background-image: url(img/simon-1.jpg);
         background-size:  cover ;
         background-position:center;
@@ -40,6 +40,7 @@
 </div>
 </header> <!--container-fluid ende-->
 
+<!--galerie-->
 <div class="container">
   <div style="margin-bottom: 50px;" class="row">
 
@@ -48,11 +49,41 @@
     <div class="col-4"><img style="width: 100%;" src="img/restaurantSW-1.jpg" alt=""></div>
     <div class="col-4"><img style="width: 100%;"  src="img/sebi-1.jpg" alt=""></div>
     <div class="col-4"><img style="width: 100%;"  src="img/sheep-1.jpg" alt=""></div>  
-    <div style="margin-top: 25px;" class="col-12"><img style="width: 100%;"  src="img/tunnel-1.jpg" alt=""></div>  
+    
+    <!--tunnel-1.jpg-->
+    <!--button--><div style="margin-top: 25px;" class="col-12"><button id="tunnel-1-btn"><img style="width: 100%;"  src="img/tunnel-1.jpg" alt=""></button><!--insert button and image-->
+    <!-- the modal --><div id="tunnel-1" class="modal"><!--insert modal-->
+    <!-- modal content --><div class="modal_content">
+    <span class="close">&times;</span>
+
+    <div class="row">
+    <div class="col-6"><img style="width: 100%;"  src="img/tunnel-1.jpg" alt=""></div><!--insert image--><div class="col-6"><h3>Tunnel</h3><p>Wurde 2019 in Tirol fotografiert.</p><!--insert text--></div></div></div>
+  
+  </div></div><!--modal/modal content ende-->
+
+    <!--js--><script>
+    var modal = document.getElementById("tunnel-1");//insert modal
+    var btn = document.getElementById("tunnel-1-btn");//insert button
+    var span = document.getElementsByClassName("close")[0];
+    // when the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";}
+    // when the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";}
+    // when the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";}}
+    </script><!--tunnel-1.jpg ende-->
+
+
+
+
+
 
   </div> <!--row ende-->
-</div> <!--container ende-->
-
+</div> <!--container/galerie ende-->
 
 
 

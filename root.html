@@ -20,7 +20,7 @@
   <header class="container-fluid">
     <div class="row">
      
-        <div style="padding-top: 20em;" class="col-md-6">
+        <div style="padding: 30vh 0% 10vh 0%;" class="col-md-6">
         <h1>Simon Angerer</h1>
         <h3>Film und Design</h2>
         </div>
@@ -46,10 +46,37 @@
 
     <h3 class="col-12" style="margin-bottom:25px">Meine Arbeiten</h3>
   
-    <div class="col-4"><img style="width: 100%;" src="img/restaurantSW-1.jpg" alt=""></div>
-    <div class="col-4"><img style="width: 100%;"  src="img/sebi-1.jpg" alt=""></div>
-    <div class="col-4"><img style="width: 100%;"  src="img/sheep-1.jpg" alt=""></div>  
+    <div class="col-md-4 col-sm-6"><img style="width: 100%; margin-top: 25px;" src="img/restaurantSW-1.jpg" alt=""></div>
+    <div class="col-md-4 col-sm-6"><img style="width: 100%; margin-top: 25px;"  src="img/sebi-1.jpg" alt=""></div>
+   
     
+<!--sheep-1.jpg-->
+    <!--button--><div style="margin-top: 25px;" class="col-md-4"><button id="sheep-1-btn"><img style="width: 100%;"  src="img/sheep-1.jpg" alt=""></button><!--insert button and image-->
+    <!-- the modal --><div id="sheep-1" class="modal"><!--insert modal-->
+    <!-- modal content --><div class="modal_content">
+      <span class="close">&times;</span>
+
+      <div class="row">
+      <div class="col-md-6 col-sm-0" style="height: 80vh;"><img style="width: 100%; margin: 20vh 0% 0vh 0%;"  src="img/sheep-1.jpg" alt=""></div><!--insert image--><div class="col-md-6 col-sm-12" style=" margin: 20vh 0% auto 0%; padding: 0% 2.5vw 0% 2.5vw;"><h1>Tunnel</h1><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p><!--insert text--></div></div></div>
+    
+    </div></div><!--modal/modal content ende-->
+  
+      <!--js--><script>
+      var modal = document.getElementById("sheep-1");//insert modal
+      var btn = document.getElementById("sheep-1-btn");//insert button
+      var span = document.getElementsByClassName("close")[0];
+      // when the user clicks the button, open the modal 
+      btn.onclick = function() {
+        modal.style.display = "block";}
+      // when the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+        modal.style.display = "none";}
+      // when the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";}}
+      </script><!--sheep-1.jpg-->
+
     <!--tunnel-1.jpg-->
     <!--button--><div style="margin-top: 25px;" class="col-12"><button id="tunnel-1-btn"><img style="width: 100%;"  src="img/tunnel-1.jpg" alt=""></button><!--insert button and image-->
     <!-- the modal --><div id="tunnel-1" class="modal"><!--insert modal-->
@@ -57,7 +84,7 @@
     <span class="close">&times;</span>
 
     <div class="row">
-    <div class="col-6" style="height: 80vh;"><img style="width: 100%; margin: auto 0% auto 0%;"  src="img/tunnel-1.jpg" alt=""></div><!--insert image--><div class="col-6" style="margin: auto 0% auto 0%;"><h3>Tunnel</h3><p>Wurde 2019 in Tirol fotografiert.</p><!--insert text--></div></div></div>
+    <div class="col-md-6 col-sm-0" style="height: 80vh;"><img style="width: 100%; margin: 20vh 0% 0vh 0%;"  src="img/tunnel-1.jpg" alt=""></div><!--insert image--><div class="col-md-6 col-sm-12" style=" margin: 20vh 0% auto 0%; padding: 0% 2.5vw 0% 2.5vw;"><h1>Tunnel</h1><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p><!--insert text--></div></div></div>
   
   </div></div><!--modal/modal content ende-->
 
